@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/* CSS Document */
+@import "normalize";
+$width: 300;
+$height: 600;
+$bannerWidth: $width + px;
+$bannerHeight: $height + px;
+@font-face {
+    font-family: 'Ciutadella-Medium';
+    src: url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_0_0.eot');
+    src: url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_0_0.eot?#iefix') format('embedded-opentype'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_0_0.woff2') format('woff2'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_0_0.woff') format('woff'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_0_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ciutadella-Regular';
+    src: url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_1_0.eot');
+    src: url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_1_0.woff2') format('woff2'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_1_0.woff') format('woff'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CiutadellaRounded-Rg';
+    src: url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_2_0.eot');
+    src: url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_2_0.eot?#iefix') format('embedded-opentype'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_2_0.woff2') format('woff2'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_2_0.woff') format('woff'), url('https://s3-ap-southeast-2.amazonaws.com/qantasfiles/ciutadella/31E6EC_2_0.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Ciutadella-regular', sans-serif;
+    text-rendering: optimizeLegibility;
+    position: relative;
+    overflow: hidden;
+}
+
+#copyFrames {
+    margin-top: 75px;
+    padding: 0 10px;
+}
+
+.copy {
+    position: relative;
+    font-family: 'Ciutadella-regular', sans-serif;
+    color: #fff;
+    font-size: 32px;
+    line-height: 32px;
+    z-index: 300;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    pointer-events: none;
+    font-weight: lighter;
+}
+
+.font-regular {
+    font-family: 'Ciutadella-regular', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+
+p,
+span {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+button {
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    border-radius: 26px;
+    padding: 7px 18px 4px;
+    font-size: 17px;
+    line-height: 21px;
+    outline: none;
+}
+
+button:hover,
+button.hover {
+    background: white;
+    color: #ee0000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: none;
+    width: ($width)+px;
+    height: ($height)+px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.loader {
+    margin-left: auto;
+    margin-right: auto;
+    width: 298px;
+    height: 598px;
+    top: 0;
+    left: 0;
+    border: 1px solid #e2e2e2;
+    position: relative;
+}
+
+.loader img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 275px;
+    left: 125px;
+}
+
+
+.banner {
+    position: absolute;
+    width: ($width - 2)+px;
+    height: ($height - 2)+px;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    clip: rect(0px, 300px, $bannerHeight, 0px);
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+}
+// Copy
+
+#messaging-end-frame {
+    position: absolute;
+    z-index: 200;
+    width: 280px;
+    top: 112px;
+    left: 10px;
+    color: white;
+}
+// LOGOS
+#logos-container {
+    position: absolute;
+    z-index: 200;
+    left: 53px;
+    bottom: 54px;
+}
+
+.qantas-logo {
+    position: relative;
+    width: 188px;
+    height: 49px;
+    left: 0;
+    top: 0;
+}
+
+.partner-logo {
+    position: absolute;
+    width: 98px;
+    height: 48px;
+    left: 172px;
+    top: 0px;
+}
+
+.logo-divider-line {
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    left: 169px;
+    top: 7px;
+    background-color: #000000;
+}
+
+#cta-button {
+    position: relative;
+    display: block;
+    left: 0;
+    margin: 0 auto;
+}
+
+
+//PRICING FRAME
+.pricing .from {
+    display: block;
+    top: 0;
+    width: 100%;
+    font-family: 'Ciutadella-Regular';
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 6px;
+}
+.pricing .destination {
+    display: block;
+    top: 22px;
+    width: 100%;
+    font-size: 48px;
+    line-height: 50px;
+    font-family: 'Ciutadella-Medium';
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+
+.pricing .price-left-copy {
+    position: relative;
+    display: block;
+    margin-right: 0px;
+    width: 100%;
+    font-family: 'Ciutadella-Regular';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 11px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+}
+.pricing .price-right-copy {
+    position: relative;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+    font-family: 'Ciutadella-Regular';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 11px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    top: 0;
+
+}
+
+.pricing .price-lockup {
+    display: block;
+    top: 64px;
+    text-align: center;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+.pricing .price {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Ciutadella-Medium';
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 7000;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.terms {
+    display: block;
+    position: absolute;
+    z-index: 8001;
+    width: 300px;
+    text-align: center;
+    bottom: 8px;
+    font-size: 9px;
+    color: #787878;
+    line-height: 10px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+// Intro Shapes
+.shapes {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 300px;
+    height: 250px;
+    z-index: 6500;
+    pointer-events: none;
+}
+
+#mask-shape {
+    position: absolute;
+    width: 6866px;
+    height: 4833px;
+    top: -1000px;
+    left: -1000px;
+    z-index: 6500;
+}
+
+#blue-shape {
+    position: absolute;
+    width: 113px;
+    height: 111px;
+    top: 0;
+    left: 0;
+    z-index: 6900;
+}
+
+#blue-shape-small {
+    position: absolute;
+    width: 64px;
+    height: 68px;
+    top: 0;
+    left: 0;
+    z-index: 6900;
+}
+// Base Shapes
+#partnership-white-shape-small {
+    position: absolute;
+    z-index: 112;
+    left: -310px;
+    top: 348px;
+    width: 838px;
+    height: 462px;
+}
+
+#partnership-white-shape {
+    position: absolute;
+    z-index: 112;
+    left: -137px;
+    top: 280px;
+    width: 530px;
+    height: 400px;
+}
+
+#base-red {
+    position: absolute;
+    z-index: 105;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 600px;
+}
+
+#red-gradient {
+    position: absolute;
+    z-index: 110;
+    left: 0;
+    top: 0;
+    width: 838px;
+    height: 462px;
+}
+
+#solid-red-base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 600px;
+    background-color: #D20000;
+    z-index: 0;
+}
+
+.bg-image {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.bg-image-01 {
+    position: absolute;
+    z-index: 130;
+}
+
+.bg-image-02 {
+    position: absolute;
+    z-index: 131;
+}
+
+.overlay {
+    position: absolute;
+    width: 260px;
+    height: 570px;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    z-index: 9999;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: none;
+}
+
+.overlay h6 {
+    font-size: 16px;
+    color: #E0001A;
+}
+
+.overlay-close {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 33px;
+}
+
+.overlay-close img {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.overlay-close:hover img {
+    width: 10px;
+    height: 10px;
+    opacity: 0.7;
+}
+
+.overlay-body {
+    font-size: 10px;
+    padding-top: 8px;
+    font-family: 'Ciutadella-Regular';
+    line-height: 14px;
+    max-height: 534px;
+    overflow-y: scroll;
+    .terms-txt {
+        font-family: Arial, sans-serif;
+        font-size: 9px;
+    }
+}
+
+.clicktag {
+    cursor: pointer;
+}
+
+.asterix {
+    font-family: 'Ciutadella-Regular';
+    display: inline-block;
+    font-size: 23px;
+    position: absolute;
+    top: -10px;
+}

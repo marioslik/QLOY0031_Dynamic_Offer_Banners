@@ -1,0 +1,12 @@
+<svg class="clicktag" version="1.1" id="partnership-white-shape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 530 400" style="enable-background:new 0 0 530 400;" xml:space="preserve">
+    <style type="text/css">
+        .partnership-shape-path{fill:url(#white-grad-values);}
+    </style>
+    <radialGradient id="white-grad-values" cx="-62.0673" cy="271.8216" r="967.0001" gradientUnits="userSpaceOnUse">
+        <stop id="white-grad-stop-01" offset="0.2488" stop-color="#FFFFFF" stop-opacity="0"/>
+        <stop id="white-grad-stop-02" offset="0.4532" stop-color="#FFFFFF" stop-opacity="0"/>
+        <stop id="white-grad-stop-03" offset="0.5933" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <path class="partnership-shape-path" d="M420.8,92.6c-46.8,37.9-104.3,52.9-159.3,46.7c-86.8-8.5-178.9-19.7-247.5-27.6v274.9h504V14.1
+        C482.3,42.9,444.7,73.3,420.8,92.6z"/>
+</svg>
