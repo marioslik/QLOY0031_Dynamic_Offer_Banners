@@ -167,7 +167,7 @@ function startAnimation() {
 
 
     //FRAME 03  ------------------------------------------------
-    tl.add("frame03", 7);
+    tl.add("frame03", 6);
     //tl.to(".bg-image", 4, {alpha:0, ease: Power1.easeInOut},"frame03+=.2");
     tl.to("#frame1", 0.8, {autoAlpha: 0, y: 0, ease: Power1.easeOut, onComplete:function(){
         $("#frame1").css("display", "none");
@@ -186,7 +186,7 @@ function startAnimation() {
     tl.to("#base-grad-stop-03", 3, {stopOpacity:1, stopColor:"#D20000", ease:Power1.easeInOut}, "frame03+=.2");
 
     //FRAME 04   ------------------------------------------------
-    tl.add("frame04", 15);
+    tl.add("frame04", 12);
     tl.to("#frame2", 0.8, {autoAlpha: 0, y: 0, ease: Power1.easeOut, onComplete:function(){
         $("#frame2").css("display", "none");
     }}, "frame04");
