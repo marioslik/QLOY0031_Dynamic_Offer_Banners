@@ -44,14 +44,21 @@ body {
     font-weight: lighter;
 }
 
-#frame3 {
-    width: 510px;
-    text-align: left;
-    padding-top: 12px;
-    padding-left: 20px;
-    font-size: 26px;
-    line-height: 26px;
+#endMesasge {
+  text-align: left;
+  margin-top: 12px;
+  left: 17px;
+  font-size: 24px;
 }
+
+// #frame3 {
+//     width: 510px;
+//     text-align: left;
+//     padding-top: 12px;
+//     padding-left: 20px;
+//     font-size: 26px;
+//     line-height: 26px;
+// }
 
 p,
 span {
@@ -158,26 +165,27 @@ h6 {
     z-index: 191;
     width: 130px;
     height: 26px;
-    left: 0;
-    top: 0;
+    left: 8px;
+    top: -2px;
 }
 
 .partner-logo {
     position: absolute;
-    top: -40px;
-    left: 27px;
+    top: -45px;
+    left: 21px;
     z-index: 400;
-    width: 83px;
+    width: 82px;
     height: 40px;
 }
 
 
 
 #cta-button {
-    position: relative;
+    position: absolute;
+    right: 105px;
     display: inline-block;
     margin-left: 10px;
-    bottom: 10px;
+    bottom: -4px;
 }
 //PRICING FRAME
 .pricing {
@@ -255,8 +263,10 @@ h6 {
     z-index: 8001;
     width: 600px;
     text-align: left;
-    left: 10px;
-    bottom: 4px;
+    // left: 10px;
+    // bottom: 4px;
+    left: 30px;
+    bottom: 7px;
     font-size: 9px;
     color: white;
     line-height: 10px;
@@ -361,6 +371,9 @@ h6 {
 .bg-image-01 {
     position: absolute;
     z-index: 130;
+    top: -117px;
+    width: 450px;
+    left: -280px;
 }
 
 .bg-image-02 {

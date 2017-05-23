@@ -4,8 +4,8 @@ var queue = new createjs.LoadQueue();
 $(document).ready(function () {
 
     var manifest = [
-        "base-image-01.jpg",
-        "base-image-02.jpg",
+        // "base-image-01.jpg",
+        // "base-image-02.jpg",
         "close.svg",
         "logos-partners.svg",
         "qantas-logo-colour.svg",
